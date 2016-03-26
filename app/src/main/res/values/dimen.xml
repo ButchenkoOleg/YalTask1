@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize">13dp</dimen>
+    <dimen name="indentList">1dp</dimen>
+    <dimen name="padding">16dp</dimen>
+    <dimen name="imageSize">150dp</dimen>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="title">#170699</color>
+    <color name="colorPrimary">#3703f4</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="value">#222222</color>
+    <color name="backgroundGray">#d1d0d0</color>
+    <color name="valueOther">#11d20e</color>
+    <color name="backgroundPink">#ef21ec</color>
+    <color name="accent_material_light">#006aff</color>
+    <color name="background_material_light">#86f4e7</color>
+
+</resources>
