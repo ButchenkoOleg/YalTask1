@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         claimsList.add(claim1);
         Claim claim2 = new Claim("Зареєстровано", "15 жовтня 2015");
         claimsList.add(claim2);
-        Claim claim3 = new Claim("Вирішити до", "24 листопад 2015");
+        Claim claim3 = new Claim("Вирішити до", "24 листопада 2015");
         claimsList.add(claim3);
         Claim claim4 = new Claim("Відповідальній", "Дніпропетровський МВК()");
         claimsList.add(claim4);
