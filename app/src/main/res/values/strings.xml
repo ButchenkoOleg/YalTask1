@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">YalantisЗадание№1</string>
-    <string name="nameOrganization">комунальне підприємство</string>
-    <string name="processStatus">в роботі</string>
+    <string name="nameOrganization">Комунальне підприємство</string>
+    <string name="processStatus">В роботі</string>
     <string name="imageTxt">зображення</string>
     <string name="press">Натиснуто  </string>
     <string name="otherItem">інший пункт</string>

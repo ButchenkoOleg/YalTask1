@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">YalantisTask1</string>
     <string name="action_settings">Settings</string>
-    <string name="nameOrganization">municipal enterprise</string>
-    <string name="processStatus">underway</string>
+    <string name="nameOrganization">Municipal enterprise</string>
+    <string name="processStatus">Underway</string>
     <string name="press">Press</string>
     <string name="otherItem">another item</string>
     <string name="imageTxt">image</string>

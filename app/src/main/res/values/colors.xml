@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="title">#170699</color>
+    <color name="title">#c7797777</color>
     <color name="colorPrimary">#3703f4</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimaryDark">#4256d7</color>
     <color name="value">#222222</color>
-    <color name="backgroundGray">#d1d0d0</color>
+    <color name="backgroundGray">#92d7d7d7</color>
     <color name="lineGray">#bab9b9</color>
+    <color name="titleWhite">#ffffff</color>
+    <color name="titleBackgroundColor">#ca2e68af</color>
 
 
 </resources>
