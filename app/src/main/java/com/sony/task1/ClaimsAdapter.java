@@ -12,7 +12,7 @@ import java.util.List;
 
 public class ClaimsAdapter extends RecyclerView.Adapter<ClaimsAdapter.MyViewHolder> {
 
-    private List<Claim> claimsList;
+    private List<Claim> claimsList; //[Comment] Wrong name
 
     public ClaimsAdapter(List<Claim> claimsList) {
         this.claimsList = claimsList;
@@ -39,7 +39,7 @@ public class ClaimsAdapter extends RecyclerView.Adapter<ClaimsAdapter.MyViewHold
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView titleCreated, created;
+        public TextView titleCreated, created; //[Comment] Wrong name and visibility modifiers
 
         public MyViewHolder(View view) {
             super(view);
