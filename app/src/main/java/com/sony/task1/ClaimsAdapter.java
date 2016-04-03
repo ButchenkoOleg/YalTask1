@@ -39,7 +39,7 @@ public class ClaimsAdapter extends RecyclerView.Adapter<ClaimsAdapter.MyViewHold
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView titleCreated, created; //[Comment] Wrong name and visibility modifiers
+        private TextView titleCreated, created; //[Comment] Wrong name and visibility modifiers
 
         public MyViewHolder(View view) {
             super(view);

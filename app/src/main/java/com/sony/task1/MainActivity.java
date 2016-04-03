@@ -14,12 +14,12 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.io.InputStream;
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 //[Comment] Wrong colors, fonts, paddings. Bad design
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private List<Claim> claimsList = new ArrayList<Claim>(); //[Comment] ArrayList<>(); Wrong name
+    private List<Claim> claimsList = new LinkedList<Claim>(); //[Comment] ArrayList<>(); Wrong name
     private ClaimsAdapter mAdapter;
 
 
@@ -38,21 +38,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(mAdapter);
 
-        prepareMovieData(); //[Comment] Movie? What movie?
+        prepareClaimsData(); //[Comment] Movie? What movie?
 
         ImageView imageView1 = (ImageView) findViewById(R.id.imageView);
         imageView1.setImageDrawable(loadDrawableFromAssets(this, "image1.jpg")); //[Comment] Hardcode
         ImageView imageView2 = (ImageView) findViewById(R.id.imageView2);
         imageView2.setImageDrawable(loadDrawableFromAssets(this, "image2.jpg"));
         ImageView imageView3 = (ImageView) findViewById(R.id.imageView3);
-        imageView3.setImageDrawable(loadDrawableFromAssets(this, "image1.jpg")); //[Comment] Use recycler view for images not for textviews
+        imageView3.setImageDrawable(loadDrawableFromAssets(this, "image3.jpg")); //[Comment] Use recycler view for images not for textviews
 
     }
 
-    public Drawable loadDrawableFromAssets(Context context, String doc) {
+    public Drawable loadDrawableFromAssets(Context context, String fileName) {
         InputStream stream = null;
         try {
-            stream = context.getAssets().open(doc);
+            stream = context.getAssets().open(fileName);
             return Drawable.createFromStream(stream, null);
         } catch (Exception ignored) {
         } finally {
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return null;
     }
 
-    private void prepareMovieData() {
+    private void prepareClaimsData() {
         Claim claim1 = new Claim("Створено", "14 жовтня 2015");
         claimsList.add(claim1);
         Claim claim2 = new Claim("Зареєстровано", "15 жовтня 2015"); //[Comment] Hardcode
@@ -96,8 +96,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             }
             case R.id.imageView: {
+                Toast.makeText(getApplicationContext(), getString(R.string.press) + " " + getString(R.string.imageTxt), Toast.LENGTH_SHORT).show();
+                break;
             }
             case R.id.imageView2: {
+                Toast.makeText(getApplicationContext(), getString(R.string.press) + " " + getString(R.string.imageTxt), Toast.LENGTH_SHORT).show();
+                break;
             }
             case R.id.imageView3: {
                 Toast.makeText(getApplicationContext(), getString(R.string.press) + " " + getString(R.string.imageTxt), Toast.LENGTH_SHORT).show();
